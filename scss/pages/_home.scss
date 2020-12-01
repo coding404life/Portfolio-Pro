@@ -1,0 +1,294 @@
+#home-banner {
+	display: flex;
+	justify-content: space-between;
+	background-color: #f7f6f4;
+
+	.banner-img {
+		display: flex;
+		flex-basis: 45%;
+
+		img {
+			max-height: 80vh;
+		}
+	}
+
+	.title {
+		display: flex;
+		padding: 0 30px;
+		align-items: flex-start;
+		flex-direction: column;
+		justify-content: center;
+		flex-basis: 45%;
+	}
+}
+
+#about {
+	text-align: center;
+	padding: 3em 0;
+
+	.container {
+		justify-content: space-between;
+		align-items: baseline;
+
+		.about-box {
+			flex-basis: 30%;
+			padding: 3em;
+
+			h4 {
+				transition: initial;
+			}
+
+			p {
+				transition: initial;
+			}
+
+			.icon {
+				font-size: 2.5em;
+				color: #1769ff;
+				margin-top: 1em;
+			}
+
+			&:hover {
+				background-color: #1769ff;
+				color: #fff;
+				border-radius: 5px;
+
+				.icon {
+					color: #fff;
+				}
+			}
+
+			&:focus {
+				background-color: #1769ff;
+				color: #fff;
+				border-radius: 5px;
+			}
+		}
+	}
+}
+
+.about-box {
+	h4 {
+		text-transform: uppercase;
+	}
+
+	hr {
+		border: 1px solid #1769ff;
+		width: 20%;
+	}
+
+	p {
+		font-family: 'raleway', sans-serif;
+	}
+}
+
+#portfolio {
+	text-align: center;
+	padding: 4em 2em 7em;
+	background-color: #f7f6f4;
+
+	.container {
+		.port-gallery {
+			display: flex;
+			flex-basis: 32%;
+			max-height: 410px;
+			text-align: center;
+			flex-direction: column;
+			position: relative;
+
+			img {
+				padding: 1em;
+				width: 100%;
+			}
+		}
+	}
+}
+
+#cnt {
+	padding: 5em;
+
+	.flex-1 {
+		flex: 1;
+		display: flex;
+
+		.button {
+			padding: 1em 2em;
+
+			&:hover {
+				background-color: #1769ff;
+				color: #fff;
+				cursor: pointer;
+			}
+
+			&:focus {
+				background-color: #1769ff;
+				color: #fff;
+				cursor: pointer;
+			}
+		}
+	}
+
+	.flex-2 {
+		flex: 2;
+
+		h1 {
+			font-family: 'Poppins', sans-serif;
+			font-weight: 300;
+			font-size: 1.6rem;
+			margin: .4em 0;
+		}
+
+		p {
+			font-family: 'Poppins', sans-serif;
+			color: #a8a5a2;
+		}
+	}
+}
+
+#testimonials {
+	text-align: center;
+	padding: 7em 2em;
+	background-color: #f7f6f4;
+	position: relative;
+
+	.title {
+		h1 {
+			font-size: 2.7em;
+			color: #0a0b0c;
+		}
+	}
+
+	.client-box {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+
+		.circle-div {
+			border-radius: 50%;
+			width: 90px;
+			overflow: hidden;
+			height: 90px;
+			border: 4px solid #fff;
+
+			img {
+				object-position: -10px 0;
+				object-fit: none;
+			}
+		}
+
+		h4 {
+			margin: .5em 0 .2em;
+			font-family: 'raleway', sans-serif;
+			text-transform: uppercase;
+			font-weight: 600;
+		}
+
+		figcaption {
+			color: #a8a5a2;
+			font-family: 'raleway', sans-serif;
+			font-weight: 500;
+			font-size: .9em;
+		}
+	}
+
+	.container {
+		p {
+			font-family: 'raleway', sans-serif;
+			color: #292a2b;
+			padding: 0 6em;
+		}
+	}
+
+	.bullets {
+		display: flex;
+		text-align: center;
+		justify-content: center;
+		margin-top: 4em;
+
+		ul {
+			margin: 0;
+			padding: 0;
+
+			li {
+				display: inline-block;
+				width: 20px;
+				height: 20px;
+				margin-left: .9em;
+				border-radius: 50%;
+				cursor: pointer;
+
+				span {
+					color: #fff;
+					background-color: #a8a5a2;
+					display: inline-block;
+					width: 6px;
+					height: 6px;
+					border-radius: 50%;
+					margin: 6px auto;
+				}
+
+				&:hover {
+					border: 1px solid #1769ff;
+					background-color: #fff;
+
+					span {
+						background-color: #1769ff;
+					}
+				}
+
+				&:focus {
+					border: 1px solid #1769ff;
+					background-color: #fff;
+				}
+			}
+		}
+
+		.active {
+			span {
+				background-color: #1769ff;
+			}
+		}
+	}
+
+	.active {
+		border: 1px solid #1769ff;
+		background-color: #fff;
+	}
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	margin-top: -30px;
+	padding: 16px;
+	color: #888;
+	font-weight: bold;
+	font-size: 20px;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+
+	&:hover {
+		background-color: rgba(0, 0, 0, 0.8);
+		color: white;
+	}
+}
+
+/* Position the "next button" to the right */
+.next {
+	position: absolute;
+	right: 20px;
+	border-radius: 0 3px 3px 0;
+
+}
+
+.prev {
+	position: absolute;
+	left: 20px;
+	border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */

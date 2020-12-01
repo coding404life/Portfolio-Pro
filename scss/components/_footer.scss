@@ -1,0 +1,76 @@
+footer {
+	padding: 5em 0em 1em;
+	text-align: center;
+	.footer-nav {
+		text-align: center;
+		ul {
+			margin: 0;
+			padding: 0;
+			li {
+				display: inline-block;
+				text-transform: capitalize;
+				a {
+					text-decoration: none;
+					text-transform: capitalize;
+					padding: .4em 1em;
+					border-radius: 2em;
+					color: #333;
+					&:hover {
+						color: white;
+						background-color: #1769ff;
+					}
+					&:focus {
+						color: white;
+						background-color: #1769ff;
+					}
+				}
+			}
+		}
+		.search-box {
+			&:focus {
+				border-radius: 25px !important;
+				color: #333;
+				border: 1px solid #a8a5a2;
+				outline: none;
+			}
+			padding: .7em 1em;
+			border-radius: 25px;
+			border: 1px solid #a8a5a2;
+		}
+		.fa-search {
+			position: relative;
+			right: 40px;
+			color: #a8a5a2;
+		}
+	}
+	.footer-icons {
+		margin: 3em;
+		.fab {
+			font-size: 2em;
+			margin: 0 1em;
+		}
+		.fa-facebook {
+			color: #3b5998;
+		}
+		.fa-twitter-square {
+			color: #32ccfe;
+		}
+		.fa-instagram-square {
+			color: transparent;
+			background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+			background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+			background-clip: text;
+			-webkit-background-clip: text;
+		}
+		.fa-youtube {
+			color: #c4302b;
+		}
+	}
+	hr {
+		border: 1px solid #f7f6f4;
+	}
+	.copyrights {
+		margin: 2em 1em 1em;
+		color: #a8a5a2;
+	}
+}

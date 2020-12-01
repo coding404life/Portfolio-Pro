@@ -1,13 +1,47 @@
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: $yesevaFont;
+.title {
+	h4 {
+		font-family: 'Raleway',sans-serif;
+		font-weight: 300;
+		font-size: 1.5em;
+		margin: 10px 0;
+	}
+	h1 {
+		margin: 0;
+		font-size: 2em;
+		font-weight: 300;
+	}
+	span {
+		display: block;
+	}
+	p {
+		font-family: 'raleway',sans-serif;
+		font-weight: 300;
+		color: #666;
+		font-size: .8em;
+		margin-bottom: 2em;
+		span {
+			display: block;
+		}
+	}
+}
+.section-title {
+	position: relative;
+}
+.opacity-title {
+	font-size: 2em;
+	letter-spacing: 4px;
+	text-transform: uppercase;
+	font-weight: bold;
+	opacity: .1;
 }
 
-p {
-    font-family: $latoFont;
-    font-weight: $regular;
+.visible-title {
+	font-size: 1.4em;
+	letter-spacing: 4px;
+	text-transform: uppercase;
+	font-weight: 400;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: -.5em;
 }

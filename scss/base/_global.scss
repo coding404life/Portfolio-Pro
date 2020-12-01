@@ -1,10 +1,61 @@
 //body styls
+/* importing poppins font */
+@import "https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Raleway:wght@300;500&display=swap";
+
+/* General styles */
 html {
-    scroll-behavior: smooth;
+	scroll-behavior: smooth;
 }
 
 body {
-    font-family: $sans;
-    font-weight: $light;
-    transition: all ease-in-out 250ms;
+	margin: 0;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 400;
+	transition: all ease-in-out 250ms;
+	color: #333;
 }
+
+* {
+	box-sizing: border-box;
+	transition: all ease-in-out 250ms;
+	outline: none;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+/*start Flexbox styles */
+.container {
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.content-center {
+	justify-content: center;
+}
+
+.column {
+	flex-direction: column;
+}
+
+.align-center {
+	align-items: center;
+}
+
+.nowrap {
+	flex-wrap: nowrap;
+}
+
+.d-none {
+	display: none;
+}
+
+/*end Flexbox styles */

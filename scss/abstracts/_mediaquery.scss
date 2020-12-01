@@ -1,0 +1,182 @@
+@media (max-width:900px) {
+	.title {
+		h1 {
+			font-size: 1.4em;
+		}
+
+		h4 {
+			font-size: 1.2em;
+		}
+	}
+
+	.button {
+		padding: .4em .7em;
+	}
+
+	header {
+		padding: 0;
+
+		nav {
+			flex-direction: column;
+			padding: 20px 0;
+
+			ul {
+				position: static;
+
+				li {
+					margin: 20px 0;
+
+					a {
+						padding: .4em .6em;
+					}
+				}
+			}
+		}
+	}
+
+	#home-banner {
+		flex-direction: column-reverse;
+
+		.banner-img {
+			img {
+				display: none;
+			}
+		}
+
+		.title {
+			text-align: center;
+			align-items: center;
+			padding-bottom: 2em;
+		}
+	}
+
+	#about {
+		padding: 1em 0;
+
+		.container {
+			.about-box {
+				padding: 0 2em;
+				flex-basis: 100%;
+			}
+
+			justify-content: center;
+		}
+	}
+
+	#portfolio {
+		padding: 2em 0;
+
+		.container {
+			.port-gallery {
+				flex-basis: 100%;
+				padding: 0 1em;
+			}
+		}
+	}
+}
+
+@media (min-width:500px) and (max-width:900px) {
+	.container {
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+	}
+
+	#about {
+		.container {
+			.about-box {
+				flex-basis: 50%;
+				align-items: center;
+			}
+		}
+	}
+
+	#portfolio {
+		.container {
+			.port-gallery {
+				flex-basis: 50%;
+			}
+		}
+	}
+}
+
+@media (max-width:500px) {
+	#about {
+		.container {
+			.about-box {
+				padding: 0 1em;
+			}
+		}
+	}
+
+	#cnt {
+		padding: 2em;
+
+		.flex-1 {
+			flex: auto;
+		}
+
+		.flex-2 {
+			flex: auto;
+			margin-bottom: 1em;
+			text-align: center;
+		}
+
+		.container {
+			flex-wrap: wrap;
+			padding:0;
+		}
+	}
+
+	#testimonials {
+		padding: 3em .5em;
+
+		.container {
+			.title {
+				h1 {
+					font-size: 1.8em;
+				}
+			}
+
+			p {
+				padding: 0;
+			}
+		}
+
+		.bullets {
+			margin-top: 2em;
+		}
+	}
+
+	footer {
+		.footer-nav {
+			ul {
+				li {
+					&:last-child {
+						margin-top: 1em;
+					}
+
+					a {
+						padding: .4em .6em;
+					}
+				}
+			}
+		}
+
+		.footer-icons {
+			margin: 2em auto;
+
+			.fab {
+				margin: 0 .5em;
+			}
+		}
+	}
+}
+
+@media (max-width: 900px) and (min-width: 500px) {
+	#testimonials {
+		.container {
+			flex-direction: column;
+		}
+	}
+}

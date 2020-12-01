@@ -68,7 +68,7 @@ function jsTask() {
         //concat the js files into one file called all.js
         .pipe(concat('all.js'))
         //minify the js files
-        .pipe(uglify())
+        // .pipe(uglify())
         //add notify for js 
         .pipe(notify("Js Changes Saved!"))
         //set the destination to dist folder
@@ -93,6 +93,7 @@ async function cacheBusting() {
 async function imgComp() {
     //images source file
     src('./images/*')
+        .pipe(notify(e => `Compressing -> ${e.history[0]} `))
         //gulp image compress
         .pipe(image())
         //notify the images been compressed
