@@ -1,4 +1,4 @@
-// 'use strict';
+'use strict';
 let clientIndex = 1;
 
 slide(clientIndex);
